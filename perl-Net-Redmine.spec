@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:    Represents a ticket
 License:    GPL+ or Artistic
@@ -33,6 +33,11 @@ BuildRequires: perl(WWW::Mechanize)
 BuildRequires: perl-pQuery
 BuildRequires: perl(Regexp::Common)
 BuildRequires: perl(Regexp::Common::Email::Address)
+
+# for some old reason, perl(pQuery) is not provided
+%define _requires_exceptions perl\(pQuery\)
+Requires: perl-pQuery
+
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
