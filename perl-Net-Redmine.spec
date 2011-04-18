@@ -29,6 +29,7 @@ BuildRequires: perl(Text::CSV::Slurp)
 BuildRequires: perl(Text::Greeking)
 BuildRequires: perl(URI)
 BuildRequires: perl(URI::Escape)
+BuildRequires: perl(Exporter::Lite)
 BuildRequires: perl(WWW::Mechanize)
 BuildRequires: perl-pQuery
 BuildRequires: perl(Regexp::Common)
