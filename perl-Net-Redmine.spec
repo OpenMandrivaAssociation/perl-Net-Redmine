@@ -1,5 +1,5 @@
 %define upstream_name    Net-Redmine
-%define upstream_version 0.08
+%define upstream_version 0.09
 
 # for some old reason, perl(pQuery) is not provided
 %if %{_use_internal_dependency_generator}
@@ -9,14 +9,14 @@
 %endif
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	%perl_convert_version 0.09
+Release:	1
 
 Summary:	Represents a ticket
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Net/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Net/Net-Redmine-0.09.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Any::Moose)
@@ -85,3 +85,4 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Thu May 06 2010 cpan2dist 0.08-1mdv
 - initial mdv release, generated with cpan2dist
+
