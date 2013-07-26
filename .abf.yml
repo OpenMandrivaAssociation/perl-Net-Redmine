@@ -1,2 +1,4 @@
+removed_sources:
+  Net-Redmine-0.08.tar.gz: a214a1ad0237f029acc83e869feb3965d9e9da54
 sources:
-  "Net-Redmine-0.08.tar.gz": a214a1ad0237f029acc83e869feb3965d9e9da54
+  Net-Redmine-0.09.tar.gz: 0f6be4b9858f82422224626f3fa5d41fbeab5828
