@@ -10,7 +10,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 0.09
-Release:	2
+Release:	3
 
 Summary:	Represents a ticket
 License:	GPL+ or Artistic
