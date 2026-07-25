@@ -9,14 +9,14 @@
 %endif
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 0.09
-Release:	3
+Version:	%{upstream_version}
+Release:	4
 
 Summary:	Represents a ticket
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Net/Net-Redmine-0.09.tar.gz
+Url:		https://github.com/gugod/net-redmine
+Source0:	https://cpan.metacpan.org/authors/id/G/GU/GUGOD/Net-Redmine-0.09.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
