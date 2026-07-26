@@ -1,6 +1,4 @@
 %define upstream_name    Net-Redmine
-%define upstream_version 0.09
-
 # for some old reason, perl(pQuery) is not provided
 %if %{_use_internal_dependency_generator}
 %define __noautoreq 'perl\\(pQuery\\)'
@@ -9,8 +7,8 @@
 %endif
 
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	4
+Version:	0.09
+Release:	5
 
 Summary:	Represents a ticket
 License:	GPL+ or Artistic
@@ -52,7 +50,7 @@ BuildArch: noarch
 Net::Redmine is an mechanized-based programming API against redmine server.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
